@@ -51,13 +51,15 @@ Faite un fork de ce github pour y modifier la config.json
 Rendez-vous sur https://render.com/ et créer vour un compte
 Créer un Web Service:
 
-Public Git repository tu met : "https://github.com/4wip/Crowbot/"
+Public Git repository tu met ton fork : "https://github.com/tonnom/Crowbot/"
 Settings :
 Region Frankurt (eu central) car c'est le plus proche de la France
 Runtime Node | Build Command: "npm i" | Start Command: "node index.js" | Instance type: Free ou autre.
-Environment Variable | Token | Entre Le token de ton bot.
+Environment Variable | token | Entre Le token de ton bot.
                      | NODE_VERSION | 16.20.0
 Finalement créer votre Web Service.
+
+
 
 Votre bot va se construire. à gauche il y'a écrit logs allez dessus quand tout sera charger il sera écrit :
 - Connecter Nomdetonbot
