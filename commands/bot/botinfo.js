@@ -25,11 +25,10 @@ module.exports = {
             embed.setTimestamp()
             embed.setFooter(`${client.config.name}`)
             embed.addFields(
-                { name: '👑 Owner / Developer :', value: '<@1208337813339373569>', inline: true },
+                { name: '👑 Owner / Developer :', value: '1130588853560954971', inline: true },
                 { name: '🔌 Latence Ping Bot :', value: `\`${client.ws.ping}Ms\`` },
                 { name: '🚀 Total Server(s) :', value: `\`${client.guilds.cache.size}\``, inline: true },
                 { name: '👥 Total User(s) :', value: `\`${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0)}\``, inline: true },
-                { name: '📞 Support :', value: `[Clique ICI Pour Rejoindre Le Support](https://discord.gg/htNuh5pZ)`, inline: true },
                 { name: '📗 Node.js Version :', value: `\`${process.version}\``, inline: true },
                 { name: "📚 Discord.js Version :", value: `\`${Discord.version}\``, inline: true },
                 { name: "🟢 Uptime :", value: `<t:${(Date.now()-client.uptime).toString().slice(0, -3)}:R>`, inline: true }, 
