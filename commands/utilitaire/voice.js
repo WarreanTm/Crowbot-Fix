@@ -90,8 +90,8 @@ module.exports = {
 
                 .setDescription(`
 
-<:members:1238192363935895654> - ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} : **${message.guild.memberCount}** 
-<:Online:1238192550301667388> - ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*En ligne*' : '*En ligne*'} : **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** 
+<:members:1238192363935895654> - ${message.guild.memberCount > 1 ? 'Membres' : 'Membre'} : **${message.guild.memberCount}** 
+<:Online:1238192550301667388> - ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? 'En ligne' : 'En ligne'} : **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** 
 <:Voice:1238192454977458197> - ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? 'En vocal' : 'En vocal'} : **${message.guild.members.cache.filter(m => m.voice.channel).size}** 
 <a:NitroBooster:1238192280997855302> - ${message.guild.premiumSubscriptionCount > 1 ? 'Boosts' : 'Boosts'} : **${message.guild.premiumSubscriptionCount}** 
 
@@ -101,7 +101,8 @@ module.exports = {
 
                 .setTimestamp()
 
-                .setFooter(`${message.guild.name} #Statistiques`)
+                .setFooter(`${message.guild.icon} #
+		Statistiques`)
 
 
 
