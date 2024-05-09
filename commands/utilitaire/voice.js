@@ -101,8 +101,7 @@ module.exports = {
 
                 .setTimestamp()
 
-                .setFooter(`${message.guild.icon} #
-		Statistiques`)
+                .setFooter(`Okinawa Statistiques `)
 
 
 
