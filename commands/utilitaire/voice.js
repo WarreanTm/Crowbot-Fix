@@ -94,9 +94,9 @@ module.exports = {
 
 - ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*En ligne*' : '*En ligne*'} **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** <a:4_terre:1220445710223151217>
 
-- ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? '*En vocal*' : '*En vocal*'} **${message.guild.members.cache.filter(m => m.voice.channel).size}** <:4_vocal:1217007411068669963>
+<:Voice:1238192454977458197> - ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? 'En vocal' : 'En vocal'} **${message.guild.members.cache.filter(m => m.voice.channel).size}** 
 
-<a:NitroBooster:1238192280997855302> - ${message.guild.premiumSubscriptionCount > 1 ? '*Boosts*' : '*Boosts*'} **${message.guild.premiumSubscriptionCount}** <a:4_boost:1217008346662699098>
+<a:NitroBooster:1238192280997855302> - ${message.guild.premiumSubscriptionCount > 1 ? 'Boosts' : 'Boosts'} **${message.guild.premiumSubscriptionCount}** 
 
 `)
 
