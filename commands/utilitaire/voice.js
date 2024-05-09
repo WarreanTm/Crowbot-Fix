@@ -44,10 +44,10 @@ module.exports = {
                 .setURL('https://github.com/4wip')
                 //.setThumbnail(guild.iconURL({dynamic: true}))
                 .setDescription(`
-- ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} *sur le serveur :* **${message.guild.memberCount}** 
+- ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} :* **${message.guild.memberCount}** 
 - ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*Membres*' : '*Membre*'} *en ligne :* **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** 
 - ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? '*Membres*' : '*Membre*'} *en vocal :* **${message.guild.members.cache.filter(m => m.voice.channel).size}** 
-- ${message.guild.premiumSubscriptionCount > 1 ? '*Nombre*' : '*Nombres*'} *de boosts :* **${message.guild.premiumSubscriptionCount}** 
+- ${message.guild.premiumSubscriptionCount > 1 ? '*Nombre*' : '*Nombres*'} *boosts :* **${message.guild.premiumSubscriptionCount}** 
 `)
                 .setColor(color)
                 .setTimestamp()
