@@ -90,7 +90,7 @@ module.exports = {
 
                 .setDescription(`
 
-- ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} *sur le serveur :* **${message.guild.memberCount}** <:4_membre:1220474644004339713>
+- ${message.guild.memberCount > 1 ? <a:NitroBooster:1238192280997855302>'*Membres*' : '*Membre*'} **${message.guild.memberCount}** 
 
 - ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*Membres*' : '*Membre*'} *en ligne :* **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** <a:4_terre:1220445710223151217>
 
