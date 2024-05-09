@@ -90,13 +90,13 @@ module.exports = {
 
                 .setDescription(`
 
-- ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} **${message.guild.memberCount}** 
+<:members:1238192363935895654> - ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} : **${message.guild.memberCount}** 
 
-- ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*En ligne*' : '*En ligne*'} **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** <a:4_terre:1220445710223151217>
+<:Online:1238192550301667388> - ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*En ligne*' : '*En ligne*'} : **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** 
 
-<:Voice:1238192454977458197> - ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? 'En vocal' : 'En vocal'} **${message.guild.members.cache.filter(m => m.voice.channel).size}** 
+<:Voice:1238192454977458197> - ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? 'En vocal' : 'En vocal'} : **${message.guild.members.cache.filter(m => m.voice.channel).size}** 
 
-<a:NitroBooster:1238192280997855302> - ${message.guild.premiumSubscriptionCount > 1 ? 'Boosts' : 'Boosts'} **${message.guild.premiumSubscriptionCount}** 
+<a:NitroBooster:1238192280997855302> - ${message.guild.premiumSubscriptionCount > 1 ? 'Boosts' : 'Boosts'} : **${message.guild.premiumSubscriptionCount}** 
 
 `)
 
