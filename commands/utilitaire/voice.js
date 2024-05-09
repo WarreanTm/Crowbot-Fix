@@ -92,7 +92,7 @@ module.exports = {
 
 - ${message.guild.memberCount > 1 ? '*Membres*' : '*Membre*'} **${message.guild.memberCount}** 
 
-- ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*Membres*' : '*Membre*'} *en ligne :* **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** <a:4_terre:1220445710223151217>
+- ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size > 1 ? '*En ligne*' : '*En ligne*'} **${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}** <a:4_terre:1220445710223151217>
 
 - ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? '*Membres*' : '*Membre*'} *en vocal :* **${message.guild.members.cache.filter(m => m.voice.channel).size}** <:4_vocal:1217007411068669963>
 
