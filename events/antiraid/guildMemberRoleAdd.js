@@ -13,10 +13,10 @@ module.exports = async (client, member, role) => {
 	if (db.get(`blrankmd_${client.user.id}_${member.id}`) !== null) {
 
 		member.roles.remove(role.id).then(() => {
-			if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter un rôle à ${member} alors qu'il est dans la blacklistRank, je lui est enlever !`))
+			if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter un rÃ´le Ã  ${member} alors qu'il est dans la blacklistRank, je lui est enlever !`))
 
 		}).catch(() => {
-			if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter un rôle à ${member} alors qu'il est dans la blacklistRank, mais j'ai pas pu lui enlever !`))
+			if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter un rÃ´le Ã  ${member} alors qu'il est dans la blacklistRank, mais j'ai pas pu lui enlever !`))
 
 		})
 	}
@@ -45,29 +45,29 @@ module.exports = async (client, member, role) => {
 					}
 				}).then(() => {
 					member.roles.remove(role.id)
-					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions à \`${member.user.tag}\`, il a été **ban** !`))
+					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions Ã  \`${member.user.tag}\`, il a Ã©tÃ© **ban** !`))
 				}).catch(() => {
 					member.roles.remove(role.id)
-					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions à \`${member.user.tag}\`, mais il n'a pas pu être **ban** !`))
+					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions Ã  \`${member.user.tag}\`, mais il n'a pas pu Ãªtre **ban** !`))
 
 				})
 			} else if (db.get(`rolesaddsanction_${guild.id}`) === "kick") {
 				guild.members.cache.get(action.executor.id).kick().then(() => {
 					member.roles.remove(role.id)
-					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions à \`${member.user.tag}\`, il a été **kick** !`))
+					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions Ã  \`${member.user.tag}\`, il a Ã©tÃ© **kick** !`))
 				}).catch(() => {
 					member.roles.remove(role.id)
-					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions à \`${member.user.tag}\`, mais il n'a pas pu être **kick** !`))
+					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions Ã  \`${member.user.tag}\`, mais il n'a pas pu Ãªtre **kick** !`))
 				})
 			} else if (db.get(`rolesaddsanction_${guild.id}`) === "derank") {
 
 				guild.members.cache.get(action.executor.id).roles.set([]).then(() => {
 
 					member.roles.remove(role.id)
-					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions à \`${member.user.tag}\`, il a été **derank** !`))
+					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions Ã  \`${member.user.tag}\`, il a Ã©tÃ© **derank** !`))
 				}).catch(() => {
 					member.roles.remove(role.id)
-					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions à \`${member.user.tag}\`, mais il n'a pas pu être **derank** !`))
+					if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${action.executor.id}> a ajouter des permissions Ã  \`${member.user.tag}\`, mais il n'a pas pu Ãªtre **derank** !`))
 				})
 			}
 		}
